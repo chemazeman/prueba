@@ -64,6 +64,7 @@ function getSqlResultSet() {
 
 // api-storage   Local Storage
 function writeLocalStorage() {
+	alert(1);
     window.localStorage.setItem("myKey", "myValue");
     var keyname = window.localStorage.key(0); // 0 because first and only setItem!
     document.getElementById('local-storage-result').innerHTML = "Wrote key: <strong>" + keyname + "</strong>";
